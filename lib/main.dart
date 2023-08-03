@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quapp/screens/home_screen.dart';
+import 'package:quapp/screens/get_started_screen.dart';
 import 'models/quiz_view_model.dart';
 
 void main() {
@@ -16,10 +16,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => QuizViewModel(),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Quiz App',
-        home: HomeScreen(),
+        home: GetStartedScreen(),
       ),
     );
   }
